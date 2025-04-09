@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> protfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module">
+        import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/loaders/GLTFLoader.js';
+    
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+    
+        // Load 3D Model
+        const loader = new GLTFLoader();
+        loader.load('yourmodel.glb', function (gltf) {
+            scene.add(gltf.scene);
+        });
+    
+        camera.position.z = 5;
+    
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+         
+        <div id="nav-bar">
+            <div id="profile-img">
+                <img src="profile_pic-removebg-preview.png" alt="" id="profile">
+            </div>
+          <nav id="home"><a href="#" id="nav-element-home"><b>home</b></a></nav>
+          <nav><a href="about.html" id="nav-element-about"><b>about</b></a></nav>
+          <nav><a href="#"id="nav-element-project"><b>project</b></a></nav>
+          <nav><a href="resume.html"id="nav-element-resume"><b>resume</b></a></nav>
+          <nav><a href="#"id="nav-element-contact"><b>contact</b></a></nav>
+
+        </div>  
+       
+    </header>
+    <main>
+       <div id="back-banner">
+        <model-viewer src="gaming_laptop.glb" 
+        alt="A 3D Model" 
+        auto-rotate 
+        camera-controls 
+        ar id="model-laptop">
+ </model-viewer>
+        <div id="first-line">
+            <h3 id="first">hi , my name is</h3>
+            
+        </div>
+        <div id="second-line">
+            <h3 id="second"> ganesh patole</h3>
+        </div>
+        <div id="third-line">
+           <h3 id="third">i,m  full stack <br> java devloper</h3>
+        </div>
+        <div id="fourth-line">
+            <p id="fourth"><i class="fa-solid fa-bolt"></i>&nbsp;I am Ganesh Patole, a 3rd-year BE Computer Engineering student at Manav School of Engineering and Technology, Vyala, Akola. <br><p id="fourth"><i class="fa-solid fa-bolt"></i> &nbsp;I am a professional Full Stack Java Developer with expertise in HTML, CSS, Java, C, and MySQL.</p>
+        </div>
+
+        <div id="learn-more-get-in-touch">
+            <div id="learn-more">
+                <a href="about.html" id="learn-more-text">learn more&nbsp;<i class="fa-solid fa-greater-than"></i></a>
+             </div>
+             <div id="get-in-touch">
+                <a href="#" id="get-in-text">get in touch&nbsp;<i class="fa-solid fa-greater-than"></i></a>
+             </div>
+        </div>
+       </div>
+       <div id="skills">
+        my experties
+       </div>
+     <div id="box-container">
+        <div id="box-1">
+            <div id="box-1-heading">Creativity</div>
+          <p>
+            i consider my self as creative person <br>
+            i have build sevral project <br> like clones like myntra netflix
+          </p>
+        </div>
+        <div id="box-2">
+          <div id="box-2-heading">
+            problem sloving
+          </div>
+          <p>
+             i tackle technical challenges,  <br>
+            like connecting MySQL to a UI.
+          </p>
+        </div>
+        <div id="box-3">
+            <div id="box-3-heading">
+                technical proficiancy
+            </div>
+            <p>
+                i have expertise in HTML,CSS,Java,C, <br>MySQL as java devloper
+            </p>
+        </div>
+        <div id="box-4">
+            <div id="box-4-heading">
+                Adaptability
+            </div>
+            <p>
+                 i,m continuously learning,from Litecoin <br> mining to becoming Full Stack Java <br>
+                  Developer 
+            </p>
+        </div>
+        <div id="box-5">
+            <div id="box-5-heading">Communication & Collaboration</div>
+            <p>im expert in buisness communication <br> also expert in cryptocurrancy mining</p>
+        </div>
+      
+     </div>
+     <div id="office-1-img-container">
+        <img src="https://it2iot.odoo.com/web_editor/shape/theme_cobalt/s_key_images_1.svg?c1=o-color-1" alt="" id="office-1-img">
+    </div>
+
+    <div id="back-banner-2">
+       <div id="icon-container">
+        <i class="fa-brands fa-html5 html-icon"></i>
+        <i class="fa-brands fa-css3-alt css-icon"></i>
+        <i class="fa-solid fa-database database-icon"></i>
+        <i class="fa-brands fa-java java-icon"></i>
+        <i class="fa-solid fa-c c-icon"></i>
+
+       </div>
+        <div id="first-line-2">
+            <h3 id="first-2">what i do </h3>
+            
+        </div>
+        <div id="third-line-2">
+           <h3 id="third-2">as full stack <br> java devloper</h3>
+        </div>
+        <div id="fourth-line-2">
+            <p id="fourth-2"><i class="fa-solid fa-bolt"></i>&nbsp; i have devloped highly intereactive front end for web app and websites <br><i class="fa-solid fa-bolt"></i>&nbsp; I am a professional Full Stack Java Developer with expertise in HTML, CSS, Java, C, and MySQL.</p>
+        </div>
+
+       </div>
+       <div id="office-2-img-container">
+        <img src="https://www.mingoblox.com/static/media/whoImg.9c1210988f052c164f4a.png" alt="" id="office-2-img">
+       </div>
+
+       <div id="back-banner-3">
+        <div id="first-line-3">
+            <h3 id="first-3"> proficiancy</h3>
+            
+        </div>
+        <label for="progress-bar-fronted" id="label-bar-1">fronted devlopment</label>
+        <div id="fronted-progress-bar-container">
+            <div id="progress-bar-fronted"></div>
+        </div>
+        <label for="progress-bar-backend" id="label-bar-2">backend devlopment</label>
+        <div id="backend-progress-bar-container">
+            <div id="progress-bar-backend"></div>
+        </div>
+       </div>
+       <div id="office-3-img-container">
+        <img src="https://gmlsoftlabs.com/wp-content/uploads/2022/07/istockphoto-1249713244-612x612-removebg-preview.png" alt="" id="office-3-img">
+       </div>
+       <div id="projects">
+       projects
+       </div>
+       <div id="project-container">
+        <div id="project-1">
+            <div id="project-1-heading">myntra-clone-project</div>
+            <p>
+                <i class="fa-solid fa-bolt"></i> &nbsp;  i have devloped myntra clone using html css 
+            </p>
+            <div id="project-1-btn"><a href="myntra - Personal - Microsoft​ Edge 2025-04-03 01-12-34.mp4" id="project-1-btn-id">get started</a>&nbsp;<i class="fa-solid fa-greater-than"></i></div>
+        </div>
+
+        <div id="project-2">
+            <div id="project-2-heading">netflix-clone-project</div>
+            <p>
+                <i class="fa-solid fa-bolt"></i> &nbsp;  i have devloped  netflix clone using html css 
+            </p>
+            <div id="project-2-btn"><a href="netflix - Personal - Microsoft​ Edge 2025-03-31 00-08-39.mp4" id="project-1-btn-id">get started</a>&nbsp;<i class="fa-solid fa-greater-than"></i></div>
+        </div>
+        </div>
+       </div>
+       <div id="certification">
+        certifications
+        </div>
+       <div id="certification-box-container-1">
+        <div id="certification-box-1">
+            <i class="fa-brands fa-html5 html-icon-2"></i>
+            <div id="certification-box-1-heading">
+                html certification test
+            </div>
+            <p>
+                <i class="fa-solid fa-bolt"></i> &nbsp;i have got html certification from <br> kg coding by prashant sir 
+            
+            </p>
+            <div id="certificate-download-btn-1">
+               <a href="kg-coding-html.pdf" type="download">download&nbsp;<i class="fa-solid fa-greater-than"></i></a>
+            </div>
+        </div>
+        <div id="certification-box-2">
+            <i class="fa-brands fa-css3-alt css-icon-2"></i>
+            <div id="certification-box-2-heading">
+                css2 certification test
+            </div>
+            <p>
+                <i class="fa-solid fa-bolt"></i> &nbsp;i have got css certification from <br> kg coding by prashant sir 
+            
+            </p>
+            <div id="certificate-download-btn-2">
+               <a href="kg-coding-css.pdf" type="download">download&nbsp;<i class="fa-solid fa-greater-than"></i></a>
+            </div>
+        </div>
+        <div id="certification-box-3">
+            <i class="fa-brands fa-java java-icon-2"></i>
+            <div id="certification-box-3-heading">
+                java certification test
+            </div>
+            <p>
+                <i class="fa-solid fa-bolt"></i> &nbsp;i have got java certification from <br> kg coding by prashant sir 
+            
+            </p>
+            <div id="certificate-download-btn-3">
+               <a href="kg-coding-java.pdf" type="download">download&nbsp;<i class="fa-solid fa-greater-than"></i></a>
+            </div>
+        </div>
+        <div id="certification-box-4">
+             <img src="https://global-uploads.webflow.com/6077f96cf4fa19216396daaf/63f36981950c481a7701e95f_logo-p-500.png" alt="">
+            <div id="certification-box-4-heading">
+                devtown appreciation certificates
+            </div>
+            <p>
+                <i class="fa-solid fa-bolt"></i> &nbsp;i have got appreciation certificate from devtown 
+            
+            </p>
+            <div id="certificate-download-btn-4">
+               <a href="devtown.pdf" type="download">download&nbsp;<i class="fa-solid fa-greater-than"></i></a>
+            </div>
+        </div>
+     </div>
+    </main>
+    <footer>
+        <div id="fotter-container">
+            <div id="fotter-column">
+                <h3>CONTACT INFORMATION</h3>
+                 <a href="#">gpatole473@gmail</a>
+                 <a href="#">ph:8530694083</a>
+            
+            </div>
+
+            <div id="fotter-column">
+                <h3>QUICK LINKS</h3>
+                 <a href="about.html">ABOUT</a>
+                 <a href="resume.html">RESUME</a>
+            </div>
+
+            
+            <div id="fotter-column">
+                <h3>USEFULL LINKS</h3>
+                 <a href="#">BLOGS</a>
+                 <a href="#">CARRER</a>
+                 <a href="#">SITE MAP</a>
+
+            </div>
+            <div id="fotter-column5">
+                <h3>KEEP IN TOUCH</h3>
+                 <a href="https://x.com/GaneshP85116416"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="https://youtube.com/@gptole?si=vyAPW4qT1FYOT4dE"><i class="fa-brands fa-youtube"></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="https://www.linkedin.com/in/ganesh-patole-021a44248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                 
+                 
+            </div>
+            <div id="copy-right">
+                © 2025 Ganesh Patole. All Rights Reserved.
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html> 

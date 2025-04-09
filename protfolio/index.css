@@ -1,0 +1,881 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+   
+}
+
+#profile{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: easy-in-out;
+}
+#profile:hover{
+    transform: rotateZ(360deg);
+}
+#nav-bar{
+height: 60px;
+width: 100%;
+background-color: #ffffff;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ text-decoration: none;
+ z-index: 1;
+ position: fixed;
+ 
+}
+
+#nav-bar a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 22px 0;
+}
+#nav-bar a:hover{
+   border-bottom: 2px solid orangered;
+   
+}
+
+#back-banner{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    height: 500px;
+    width: 800px;
+   background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px black;
+ 
+
+}
+#first-line{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+#first{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: orangered;
+}
+#second-line{
+    position: absolute;
+    top: 28%;
+    left: 14.5%;
+
+}
+#second{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+     color: orangered;
+}
+#third-line{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+}
+#third{
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: capitalize;
+   color: darkblue;
+}
+#fourth-line{
+    position: absolute;
+    top: 65%;
+    left: 14%;
+}
+#fourth{
+    font-size: 15px;
+    font-weight:500 ;
+   text-transform: lowercase;
+    color: black;
+}
+
+#learn-more{
+    position: absolute;
+    top: 80%;
+    left: 14%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+
+    
+}
+#learn-more:hover{
+ background-color: darkcyan;
+ transform: scale(1.1);
+}
+#learn-more a{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+#get-in-touch{
+   display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 32%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+   background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid black;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+   
+}
+#get-in-touch:hover{
+    background-color: darkcyan;
+    transform: scale(1.1);
+}
+#get-in-touch a{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+#model-laptop{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    height: 300px;
+    width: 500px;
+}
+#skills{
+    position: absolute;
+    top: 110%;
+    left: 14%;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: orangered;
+
+}
+#box-container {
+   
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 119%;
+    left: 1%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+#box-1 ,#box-2 , #box-3 , #box-4 , #box-5 , #box-6{
+    height: 160px;
+    width: 240px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 15px 5px black;
+
+}
+
+#html-icon{
+   position: absolute;
+   top: 10%;
+   left: 2%;
+}
+
+#box-1-heading{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-weight: 900;
+    color: black;
+    margin-left: 20px;
+}
+#box-1 p {
+    position: absolute;
+    top: 32%;
+    left: 1%;
+   font-size: 12px;
+   font-weight: 300;
+  color: black;
+
+}
+#box-2-heading{
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    font-weight: 900;
+    color: black;
+    margin-left: 20px;
+}
+#box-2 p{
+    position: absolute;
+    top: 32%;
+    left: 22%;
+   font-size: 12px;
+   font-weight: 300;
+  color: black;
+}
+#box-3-heading{
+    position: absolute;
+    top: 10%;
+    left: 40.5%;
+    font-weight: 900;
+    color: black;
+    margin-left: 20px;
+}
+#box-3 p{
+    position: absolute;
+    top: 32%;
+    left: 40.5%;
+   font-size: 12px;
+   font-weight: 300;
+  color: black; 
+}
+#box-4-heading{
+    position: absolute;
+    top: 10%;
+    left: 63%;
+    font-weight: 900;
+    color: black;
+    margin-left: 20px;
+}
+#box-4 p{
+    position: absolute;
+    top: 32%;
+    left: 61%;
+   font-size: 12px;
+   font-weight: 300;
+    color: black; 
+}
+#box-5-heading{
+    position: absolute;
+    top: 8%;
+    left: 82%;
+    font-weight: 900;
+    color: black;
+    margin-left: 20px;
+}
+#box-5 p{
+    position: absolute;
+    top: 42%;
+    left: 82%;
+   font-size: 12px;
+   font-weight: 300;
+    color: black; 
+}
+#office-1-img-container{
+    position: absolute;
+    top: 20%;
+    left: 71%;
+   
+}
+#office-1-img{
+    height: 420px;
+    width: 420px;
+}
+#back-banner-2{
+    position: absolute;
+    top: 160%;
+    left: 38%;
+    height: 500px;
+    width: 800px;
+   background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px black;
+ 
+
+}
+#first-line-2{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+#first-2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: orangered;
+}
+
+
+#third-line-2{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+}
+#third-2{
+    font-size: 42px;
+    font-weight: 500;
+    text-transform: capitalize;
+   color: darkblue;
+}
+#fourth-line-2{
+    position: absolute;
+    top: 65%;
+    left: 14%;
+}
+#fourth-2{
+    font-size: 15px;
+    font-weight:500 ;
+   text-transform: lowercase;
+    color: black;
+}
+#icon-container{
+    margin-top: 15px;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+.html-icon{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 70px;
+
+}
+.css-icon{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 70px;
+
+}
+.database-icon{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 70px;
+}
+.java-icon{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 70px;
+}
+.c-icon{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 70px;
+}
+#office-2-img-container{
+    position: absolute;
+    top: 155%;
+    left: 4%;
+   
+}
+#office-2-img{
+    height: 420px;
+    width: 420px;
+}
+#back-banner-3{
+    position: absolute;
+    top: 255%;
+    left: 3%;
+    height: 500px;
+    width: 800px;
+   background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px black;
+ 
+
+}
+#first-line-3{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+#first-3{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: orangered;
+}
+#fronted-progress-bar-container{
+    width: 70%;
+    height: 15px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+
+}
+#progress-bar-fronted{
+    background-color: darkblue;
+    height: 100%;
+    width: 75%;
+    border-radius: 20px;
+}
+#label-bar-1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 17px;
+    font-weight: 600;
+}
+#backend-progress-bar-container{
+    width: 70%;
+    height: 15px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+
+}
+#progress-bar-backend{
+    background-color: darkblue;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
+#label-bar-2{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-size: 17px;
+    font-weight: 600;
+}
+#office-3-img-container{
+    position: absolute;
+    top: 245%;
+    left: 67%;
+    background-size: contain;
+}
+#office-3-img{
+    height: 420px;
+    width: 450px;
+}
+#porject-container{
+    margin-top: 100px;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+#project-1{
+    position: absolute;
+    top: 350%;
+    left: 3%;
+    height: 230px;
+    width: 600px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px black;
+}
+#project-2{
+    position: absolute;
+    top: 350%;
+    left: 55%;
+    height: 230px;
+    width: 600px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px black;
+}
+#projects{
+    position: absolute;
+    top: 342%;
+    left: 14%;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: orangered;
+
+}
+#project-1-heading
+{  margin-left: 30%;
+    margin-top: 5%;
+    font-size: 23px;
+    font-weight: 700;
+   text-transform: lowercase;
+    color: black; 
+}
+#project-1 p{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+#project-1-btn{
+    margin-left: 40%;
+    margin-top: 12%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+
+    
+}
+#project-1-btn a{
+   
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+#project-1-btn:hover{
+ background-color: darkcyan;
+ transform: scale(1.1);
+}
+#project-2-heading
+{  margin-left: 28%;
+    margin-top: 5%;
+    font-size: 23px;
+    font-weight: 700;
+   text-transform: lowercase;
+    color: black; 
+}
+#project-2 p{
+    margin-top: 25px;
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+#project-2-btn{
+    margin-left: 40%;
+    margin-top: 12%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+
+    
+}
+#project-2-btn a{
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+#project-2-btn:hover{
+ background-color: darkcyan;
+ transform: scale(1.1);
+
+}
+#certification-box-container-1{
+    display: inline-block;
+     
+}
+#certification-box-1{
+    position: absolute;
+    top: 401%;
+    left: 2%;
+    height: 400px;
+    width: 250px;
+   background-color: #ffffff;
+   border-radius: 25px;
+   box-shadow: 0px 0px 15px 5px black;
+}
+#certification-box-2{
+    position: absolute;
+    top: 401%;
+    left: 22%;
+    height: 400px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px black;
+}
+#certification-box-3{
+    position: absolute;
+    top: 401%;
+    left: 60%;
+    height: 400px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px black;
+}
+#certification-box-4{
+    position: absolute;
+    top: 401%;
+    left: 80%;
+    height: 400px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 5px black;
+}
+#certification{
+    position: absolute;
+    top: 392%;
+    left: 14%;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: orangered;
+
+}
+.html-icon-2{
+    font-size: 50px;
+    margin-left: 44%;
+    margin-top: 10%;
+}
+#certification-box-1-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+    text-transform: capitalize;
+    text-align: center;
+}
+#certification-box-1 p{
+    margin-top: 20%;
+   text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+#certificate-download-btn-1{
+    
+        margin-left: 25%;
+        margin-top: 30%;
+        height: 40px;
+        width: 120px;
+        text-transform: capitalize;
+        background-color: darkblue;
+        border-radius: 5px;
+        color: #ffffff;
+        text-align: center;
+        align-items: center;
+        transition: all;
+        transition-duration: 0.3s;
+        transition-timing-function: easy;
+}
+#certificate-download-btn-1 a{
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+#certificate-download-btn-1:hover{
+ background-color: darkcyan;
+ transform: scale(1.1);
+
+} 
+.html-icon-2{
+    font-size: 50px;
+    margin-left: 44%;
+    margin-top: 10%;
+}
+#certification-box-2-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+    text-transform: capitalize;
+    text-align: center;
+}
+#certification-box-2 p{
+    margin-top: 20%;
+   text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+#certificate-download-btn-2{
+    
+    margin-left: 25%;
+    margin-top: 30%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+}
+#certificate-download-btn-2 a{
+text-decoration: none;
+color: #ffffff;
+align-items: center;
+}
+#certificate-download-btn-2:hover{
+background-color: darkcyan;
+transform: scale(1.1);
+
+} 
+
+.css-icon-2{
+    font-size: 50px;
+    margin-left: 44%;
+    margin-top: 10%;
+}
+#certification-box-3-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+    text-transform: capitalize;
+    text-align: center;
+}
+#certification-box-3 p{
+    margin-top: 20%;
+   text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+#certificate-download-btn-3{
+    
+    margin-left: 25%;
+    margin-top: 30%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+}
+#certificate-download-btn-3 a{
+text-decoration: none;
+color: #ffffff;
+align-items: center;
+}
+#certificate-download-btn-3:hover{
+background-color: darkcyan;
+transform: scale(1.1);
+
+} 
+.java-icon-2{
+    font-size: 50px;
+    margin-left: 44%;
+    margin-top: 10%;
+}
+
+#certification-box-4-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+    text-transform: capitalize;
+    text-align: center;
+}
+#certification-box-4 p{
+    margin-top: 20%;
+   text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+#certificate-download-btn-4{
+    
+    margin-left: 25%;
+    margin-top: 30%;
+    height: 40px;
+    width: 120px;
+    text-transform: capitalize;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: easy;
+}
+#certificate-download-btn-4 a{
+text-decoration: none;
+color: #ffffff;
+align-items: center;
+}
+#certificate-download-btn-4:hover{
+background-color: darkcyan;
+transform: scale(1.1);
+
+} 
+.database-icon-2{
+    font-size: 50px;
+    margin-left: 44%;
+    margin-top: 10%;
+}
+#certification-box-4 img{
+    height: 50px;
+    width: 100px;
+    margin-top: 6px;
+    margin-left: 25%;
+}
+#fotter-container{
+    position: absolute;
+    top: 475%;
+     height: 40%;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+}
+#fotter-column{
+    display: flex;
+    flex-direction: column;
+}
+#fotter-column h3{
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+#fotter-column a{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+#fotter-column5{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    justify-content: space-around;
+}
+#fotter-column5 h3{
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+#fotter-column5 a{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+#copy-right{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}

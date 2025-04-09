@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+   
+}
+
+#profile{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: easy-in-out;
+}
+#profile:hover{
+    transform: rotateZ(360deg);
+}
+#nav-bar{
+height: 60px;
+width: 100%;
+background-color: #ffffff;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ text-decoration: none;
+ z-index: 1;
+ position: fixed;
+ 
+}
+
+#nav-bar a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 22px 0;
+}
+#nav-bar a:hover{
+    border-bottom: 2px solid orangered;
+    
+ }
+
+ #back-banner{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    height: 700px;
+    width: 90%;
+   background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px black;
+ 
+
+}
+#first-line{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+#first{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: orangered;
+}
+#second-line{
+    position: absolute;
+    top: 20%;
+    left: 14.5%;
+
+}
+#second{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+     color: orangered;
+}
+#third-line{
+    position: absolute;
+    top: 25%;
+    left: 14%;
+}
+#third{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+   color: darkblue;
+}
+#fourth-line{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+}
+#fourth{
+    font-size: 15px;
+    font-weight:500 ;
+   text-transform: lowercase;
+    color: black;
+}
+
