@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> netflix sign in </title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <form action="signup_process.php" method="post">
+        <div id="background-img">
+            <img src="https://wallpapers.com/images/hd/netflix-background-10qb1aq9xqmi1oan.jpg" alt="">
+        </div>
+        <div id="table">
+            <div id="box">sign up</div>
+            
+            <div id="user-name">
+                <input type="text" id="user" name="user-name" placeholder=" User Name " required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div id="gmail">
+                <input type="email" id="gmail" name="gmail" placeholder="Email or Mobile Number" required>
+            </div>
+            <div id="password">
+                
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>  
+            <div id="confirm-password">
+                
+                <input type="password" id="password" name="confirm_password" placeholder=" Confirm Password" required >
+            </div>  
+
+            <div id="submit-container">
+                <button type="submit" name="sb"><b>SUBMIT</b></button>
+            </div>
+
+            <div id="forget_password">Forgot <a href="submitpage.html">password?</a></div>
+            <div id="check-boc-container">
+                <label  id="check-box-label" for="check-box">Remembar me </label>
+            <input type="checkbox" name="Remeber me " id="check-box" class="check">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
